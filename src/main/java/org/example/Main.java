@@ -1,7 +1,11 @@
 package org.example;
 
 public class Main {
+    public static CoreMock core;
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        core = new CoreMock();
+        System.out.println("########################################");
+        System.out.println(core.msjMock());
+        System.out.println("########################################");
     }
 }
