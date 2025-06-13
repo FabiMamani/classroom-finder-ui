@@ -1,11 +1,12 @@
+import notificadores.Whatsapp;
 import org.junit.Assert;
 import org.junit.Test;
 public class TestUI {
 
     @Test
     public void test(){
-        boolean obtenido = true;
-        Assert.assertTrue(obtenido);
+        Whatsapp wts = new Whatsapp();
+        wts.update("Test");
     }
 
 }
